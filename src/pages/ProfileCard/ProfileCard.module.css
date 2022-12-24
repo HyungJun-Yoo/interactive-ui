@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+.wrap {
+  width: 340px;
+  padding: 30px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.wrap .menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrap .menu span {
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+}
+
+.wrap .menu span:nth-of-type(1) {
+  float: left;
+}
+
+.wrap .menu span:nth-of-type(2) {
+  float: right;
+}
+
+.wrap .profile {
+  width: 100%;
+  text-align: center;
+}
+
+.wrap .profile img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.wrap .profile h1 {
+  font: bold 22px/1 "arial";
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.wrap .profile p {
+  font: 12px/1 "arial";
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.wrap .profile .btnView {
+  width: 180px;
+  height: 32px;
+  margin: 0 auto 20px;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+  font: bold 12px/32px "arial";
+  color: #fff;
+  border-radius: 16px;
+}
+
+.wrap .contact {
+  margin-bottom: 25px;
+}
+
+.wrap .contact li {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.wrap .contact li:last-child {
+  border-bottom: none;
+}
+
+.wrap .contact li svg {
+  width: 20%;
+  text-align: center;
+  color: #555;
+  font-size: 15px;
+  filter: drop-shadow(2px 2px 2px #ddd);
+}
+
+.wrap .contact li span {
+  font: 11px/1 "orbitron";
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.wrap .others {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrap .others span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: gray;
+  border-radius: 50%;
+  margin: 0 10px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.wrap .others span.on {
+  opacity: 1;
+}
+
+.wrap .others span:nth-of-type(1) {
+  background: #00ffff;
+  box-shadow: 5px 5px 10px rgba(0, 255, 255, 0.5);
+}
+
+.wrap .others span:nth-of-type(2) {
+  background: #41fbb4;
+  box-shadow: 5px 5px 10px rgba(65, 251, 180, 0.5);
+}
+
+.wrap .others span:nth-of-type(3) {
+  background: hotpink;
+  box-shadow: 5px 5px 10px rgba(255, 105, 180, 0.7);
+}
+
+.wrap .others span:nth-of-type(4) {
+  background: #9410c8;
+  box-shadow: 5px 5px 10px rgba(148, 16, 200, 0.7);
+}
+
+/* member1 custom */
+body.member1 {
+  background: #00ffff;
+}
+
+.member1 .wrap .profile img {
+  box-shadow: 5px 15px 30px rgba(144, 223, 255, 0.8);
+}
+
+.member1 .wrap .profile .btnView {
+  background: linear-gradient(45deg, aqua, #77d9ff);
+  box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.5);
+}
+
+/* member2 custom */
+body.member2 {
+  background: rgb(224, 255, 234);
+}
+
+.member2 .wrap .profile img {
+  box-shadow: 5px 15px 30px rgba(144, 255, 203, 0.8);
+}
+
+.member2 .wrap .profile .btnView {
+  background: linear-gradient(45deg, #00ffb3, #77ffa0);
+  box-shadow: 5px 10px 20px rgba(0, 255, 170, 0.5);
+}
+
+/* member3 custom */
+body.member3 {
+  background: rgb(252, 224, 225);
+}
+
+.member3 .wrap .profile img {
+  box-shadow: 5px 15px 30px rgba(246, 144, 255, 0.8);
+}
+
+.member3 .wrap .profile .btnView {
+  background: linear-gradient(45deg, #ff00f2, #ff77b7);
+  box-shadow: 5px 10px 20px rgba(255, 0, 234, 0.5);
+}
+
+/* member3 custom */
+body.member4 {
+  background: rgb(245, 224, 255);
+}
+
+.member4 .wrap .profile img {
+  box-shadow: 5px 15px 30px rgba(220, 144, 255, 0.8);
+}
+
+.member4 .wrap .profile .btnView {
+  background: linear-gradient(45deg, #c300ff, #bd77ff);
+  box-shadow: 5px 10px 20px rgba(174, 0, 255, 0.5);
+}
