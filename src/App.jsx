@@ -3,6 +3,7 @@ import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
 import Home from "./pages/Home";
 import ProfileCard from "./pages/ProfileCard/ProfileCard";
+import FullScreenVideo from "./pages/FullScreenVideo/FullScreenVideo";
 
 function App() {
   const location = useLocation();
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path={"/"} element={<Home />} />
         <Route path={"/ProfileCard"} element={<ProfileCard />} />
+        <Route path={"/FullScreenVideo"} element={<FullScreenVideo />}></Route>
       </Routes>
     </>
   );

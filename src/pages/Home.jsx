@@ -9,6 +9,10 @@ export default function Home() {
       <Link to={"/ProfileCard"}>
         <p>ProfileCard</p>
       </Link>
+
+      <Link to={"/FullScreenVideo"}>
+        <p>FullScreenVideo</p>
+      </Link>
     </div>
   );
 }

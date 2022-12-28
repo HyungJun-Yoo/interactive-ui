@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&display=swap");
+
+.body {
+  background-color: #000;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 5vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header h1 {
+  font: bold 24px/1 "Architects Daughter";
+  color: #fff;
+}
+
+header #gnb {
+  display: flex;
+}
+header #gnb li {
+  margin: 0 20px;
+}
+header #gnb li a {
+  font: 16px/1 "Architects Daughter";
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+header .sns {
+  display: flex;
+}
+header .sns li {
+  margin: 0 10px;
+}
+header .sns li a {
+  font-size: 16px;
+  color: #fff;
+}
+
+header .btnMenu {
+  font-size: 24px;
+  color: #fff;
+  display: none;
+}
+
+figure {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure .txt {
+  position: absolute;
+  left: 6vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+figure .txt p {
+  font: normal 8vw/1 "Fredericka the Great";
+  color: #fff;
+  white-space: pre-line;
+}
+
+figure .txt ul {
+  display: flex;
+  margin-top: 50px;
+}
+figure .txt ul li {
+  margin-right: 30px;
+}
+figure .txt ul li svg {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 10px;
+}
+figure .txt ul li strong {
+  font: 14px/1 "arial";
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font: 12px/1 "arial";
+  color: #ddd;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 5vh 5vw;
+  z-index: 2;
+}
+
+/* mobile phone*/
+@media screen and (max-width: 1023px) {
+  header #gnb {
+    display: none;
+  }
+
+  header .sns {
+    display: none;
+  }
+
+  header .btnMenu {
+    display: block;
+  }
+
+  figure .txt p {
+    font-size: 10vw;
+  }
+}
