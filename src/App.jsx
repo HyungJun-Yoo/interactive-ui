@@ -4,6 +4,7 @@ import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import ProfileCard from "./pages/ProfileCard/ProfileCard";
 import FullScreenVideo from "./pages/FullScreenVideo/FullScreenVideo";
+import TownAnimation from "./pages/TownAnimation/TownAnimation";
 
 function App() {
   const location = useLocation();
@@ -24,7 +25,8 @@ function App() {
       <Routes>
         <Route path={"/"} element={<Home />} />
         <Route path={"/ProfileCard"} element={<ProfileCard />} />
-        <Route path={"/FullScreenVideo"} element={<FullScreenVideo />}></Route>
+        <Route path={"/FullScreenVideo"} element={<FullScreenVideo />} />
+        <Route path={"/TownAnimation"} element={<TownAnimation />} />
       </Routes>
     </>
   );

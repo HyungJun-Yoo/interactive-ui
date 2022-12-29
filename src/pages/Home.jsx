@@ -13,6 +13,10 @@ export default function Home() {
       <Link to={"/FullScreenVideo"}>
         <p>FullScreenVideo</p>
       </Link>
+
+      <Link to={"/TownAnimation"}>
+        <p>TownAnimation</p>
+      </Link>
     </div>
   );
 }
