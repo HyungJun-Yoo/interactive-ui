@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import ProfileCard from "./pages/ProfileCard/ProfileCard";
 import FullScreenVideo from "./pages/FullScreenVideo/FullScreenVideo";
 import TownAnimation from "./pages/TownAnimation/TownAnimation";
+import PanoramaUI from "./pages/PanoramaUI/PanoramaUI";
 
 function App() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
         <Route path={"/ProfileCard"} element={<ProfileCard />} />
         <Route path={"/FullScreenVideo"} element={<FullScreenVideo />} />
         <Route path={"/TownAnimation"} element={<TownAnimation />} />
+        <Route path={"/PanoramaUI"} element={<PanoramaUI />} />
       </Routes>
     </>
   );

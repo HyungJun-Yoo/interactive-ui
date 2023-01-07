@@ -17,6 +17,10 @@ export default function Home() {
       <Link to={"/TownAnimation"}>
         <p>TownAnimation</p>
       </Link>
+
+      <Link to={"/PanoramaUI"}>
+        <p>PanoramaUI</p>
+      </Link>
     </div>
   );
 }
