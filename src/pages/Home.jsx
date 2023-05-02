@@ -21,6 +21,10 @@ export default function Home() {
       <Link to={"/PanoramaUI"}>
         <p>PanoramaUI</p>
       </Link>
+
+      <Link to={"/FlexVideoBox"}>
+        <p>FlexVideoBox</p>
+      </Link>
     </div>
   );
 }
