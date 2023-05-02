@@ -23,7 +23,7 @@ export default function FullScreenVideo() {
 
   return (
     <>
-      <header>
+      <header className={styles.header}>
         <h1>DCODELAB</h1>
 
         <ul id={styles.gnb}>
@@ -70,7 +70,7 @@ export default function FullScreenVideo() {
         </Link>
       </header>
 
-      <figure>
+      <figure className={styles.figure}>
         <video src={video} autoPlay muted loop></video>
 
         <article className={styles.txt}>
@@ -91,7 +91,9 @@ export default function FullScreenVideo() {
         </article>
       </figure>
 
-      <footer>{year} DCODELAB &copy; ALL RIGHTS RESERVED.</footer>
+      <footer className={styles.footer}>
+        {year} DCODELAB &copy; ALL RIGHTS RESERVED.
+      </footer>
     </>
   );
 }

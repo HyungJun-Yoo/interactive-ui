@@ -5,7 +5,7 @@
   background-color: #000;
 }
 
-header {
+.header {
   width: 100%;
   border-bottom: 1px solid #aaa;
   display: flex;
@@ -18,41 +18,41 @@ header {
   z-index: 2;
 }
 
-header h1 {
+.header h1 {
   font: bold 24px/1 "Architects Daughter";
   color: #fff;
 }
 
-header #gnb {
+.header #gnb {
   display: flex;
 }
-header #gnb li {
+.header #gnb li {
   margin: 0 20px;
 }
-header #gnb li a {
+.header #gnb li a {
   font: 16px/1 "Architects Daughter";
   color: #fff;
   letter-spacing: 1px;
 }
 
-header .sns {
+.header .sns {
   display: flex;
 }
-header .sns li {
+.header .sns li {
   margin: 0 10px;
 }
-header .sns li a {
+.header .sns li a {
   font-size: 16px;
   color: #fff;
 }
 
-header .btnMenu {
+.header .btnMenu {
   font-size: 24px;
   color: #fff;
   display: none;
 }
 
-figure {
+.figure {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -62,44 +62,44 @@ figure {
   z-index: 1;
 }
 
-figure video {
+.figure video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-figure .txt {
+.figure .txt {
   position: absolute;
   left: 6vw;
   top: 50%;
   transform: translateY(-50%);
 }
 
-figure .txt p {
+.figure .txt p {
   font: normal 8vw/1 "Fredericka the Great";
   color: #fff;
   white-space: pre-line;
 }
 
-figure .txt ul {
+.figure .txt ul {
   display: flex;
   margin-top: 50px;
 }
-figure .txt ul li {
+.figure .txt ul li {
   margin-right: 30px;
 }
-figure .txt ul li svg {
+.figure .txt ul li svg {
   font-size: 20px;
   color: #fff;
   margin-right: 10px;
 }
-figure .txt ul li strong {
+.figure .txt ul li strong {
   font: 14px/1 "arial";
   color: #fff;
   letter-spacing: 1px;
 }
 
-footer {
+.footer {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -114,19 +114,19 @@ footer {
 
 /* mobile phone*/
 @media screen and (max-width: 1023px) {
-  header #gnb {
+  .header #gnb {
     display: none;
   }
 
-  header .sns {
+  .header .sns {
     display: none;
   }
 
-  header .btnMenu {
+  .header .btnMenu {
     display: block;
   }
 
-  figure .txt p {
+  .figure .txt p {
     font-size: 10vw;
   }
 }
