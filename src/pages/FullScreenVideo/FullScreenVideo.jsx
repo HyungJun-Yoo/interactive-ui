@@ -1,24 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
-import styles from "./FullScreenVideo.module.css";
+import styles from './FullScreenVideo.module.css';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faHeart, faSearch } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import {
-  faFacebookSquare,
-  faPlaystation,
-} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faHeart, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faFacebookSquare, faPlaystation } from '@fortawesome/free-brands-svg-icons';
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import video from "/src/assets/videos/video.mp4";
+import video from '/src/assets/videos/video.mp4';
 
 export default function FullScreenVideo() {
   const year = new Date().getFullYear();
 
   useEffect(() => {
-    document.querySelector("body").className = styles.body;
+    document.querySelector('body').className = styles.body;
   });
 
   return (
@@ -91,9 +88,7 @@ export default function FullScreenVideo() {
         </article>
       </figure>
 
-      <footer className={styles.footer}>
-        {year} DCODELAB &copy; ALL RIGHTS RESERVED.
-      </footer>
+      <footer className={styles.footer}>{year} DCODELAB &copy; ALL RIGHTS RESERVED.</footer>
     </>
   );
 }

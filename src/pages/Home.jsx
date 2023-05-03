@@ -1,28 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import styles from "./Home.module.css";
+import styles from './Home.module.css';
 
 export default function Home() {
   return (
     <div className={styles.wrap}>
-      <Link to={"/ProfileCard"}>
+      <Link to={'/ProfileCard'}>
         <p>ProfileCard</p>
       </Link>
 
-      <Link to={"/FullScreenVideo"}>
+      <Link to={'/FullScreenVideo'}>
         <p>FullScreenVideo</p>
       </Link>
 
-      <Link to={"/TownAnimation"}>
+      <Link to={'/TownAnimation'}>
         <p>TownAnimation</p>
       </Link>
 
-      <Link to={"/PanoramaUI"}>
+      <Link to={'/PanoramaUI'}>
         <p>PanoramaUI</p>
       </Link>
 
-      <Link to={"/FlexVideoBox"}>
+      <Link to={'/FlexVideoBox'}>
         <p>FlexVideoBox</p>
       </Link>
     </div>

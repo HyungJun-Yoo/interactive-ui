@@ -1,19 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
-import styles from "./TownAnimation.module.css";
+import styles from './TownAnimation.module.css';
 
-import circle from "/src/assets/towns/circle.png";
-import cloud1 from "/src/assets/towns/cloud1.png";
-import cloud2 from "/src/assets/towns/cloud2.png";
-import family from "/src/assets/towns/family.png";
-import man from "/src/assets/towns/man.png";
-import sun from "/src/assets/towns/sun.png";
-import townDay from "/src/assets/towns/town_day.png";
-import townNight from "/src/assets/towns/town_night.png";
+import circle from '/src/assets/towns/circle.png';
+import cloud1 from '/src/assets/towns/cloud1.png';
+import cloud2 from '/src/assets/towns/cloud2.png';
+import family from '/src/assets/towns/family.png';
+import man from '/src/assets/towns/man.png';
+import sun from '/src/assets/towns/sun.png';
+import townDay from '/src/assets/towns/town_day.png';
+import townNight from '/src/assets/towns/town_night.png';
 
 export default function TownAnimation() {
   useEffect(() => {
-    document.querySelector("body").className = styles.body;
+    document.querySelector('body').className = styles.body;
   });
 
   return (

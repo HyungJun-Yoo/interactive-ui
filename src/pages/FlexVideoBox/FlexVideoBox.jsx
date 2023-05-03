@@ -1,43 +1,41 @@
-import React, { useState, useEffect } from "react";
-import styles from "./FlexVideoBox.module.scss";
+import React, { useState, useEffect } from 'react';
+import styles from './FlexVideoBox.module.scss';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFirstdraft } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFirstdraft } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faSearch } from '@fortawesome/free-solid-svg-icons';
 
-import vid1 from "/src/assets/videoboxs/vid1.mp4";
-import vid2 from "/src/assets/videoboxs/vid2.mp4";
-import vid3 from "/src/assets/videoboxs/vid3.mp4";
-import vid4 from "/src/assets/videoboxs/vid4.mp4";
+import vid1 from '/src/assets/videoboxs/vid1.mp4';
+import vid2 from '/src/assets/videoboxs/vid2.mp4';
+import vid3 from '/src/assets/videoboxs/vid3.mp4';
+import vid4 from '/src/assets/videoboxs/vid4.mp4';
 
 export default function FlexVideoBox() {
   const [aside, setAside] = useState({
-    tit: "",
-    con: "",
-    vidSrc: "",
+    tit: '',
+    con: '',
+    vidSrc: '',
   });
   const [hide, setHide] = useState(false);
 
   useEffect(() => {
-    document.querySelector("body").className = styles.body;
+    document.querySelector('body').className = styles.body;
   }, []);
 
   const vids = [vid1, vid2, vid3, vid4];
 
   const MouseEnter = (event) => {
-    event.currentTarget.querySelector("video").play();
+    event.currentTarget.querySelector('video').play();
   };
 
   const MouseLeave = (event) => {
-    event.currentTarget.querySelector("video").pause();
+    event.currentTarget.querySelector('video').pause();
   };
 
   const MouseClick = (event) => {
-    const tit = event.currentTarget.querySelector("h2").innerText;
-    const con = event.currentTarget.querySelector("p").innerText;
-    const vidSrc = event.currentTarget
-      .querySelector("video")
-      .getAttribute("src");
+    const tit = event.currentTarget.querySelector('h2').innerText;
+    const con = event.currentTarget.querySelector('p').innerText;
+    const vidSrc = event.currentTarget.querySelector('video').getAttribute('src');
 
     setAside({
       tit,
@@ -59,9 +57,7 @@ export default function FlexVideoBox() {
           <FontAwesomeIcon icon={faFirstdraft} className={styles.icon} />
           <span className={styles.span}>DCODELAB</span>
         </h1>
-        <p className={styles.p}>
-          {new Date().getFullYear()} DCODELAB &copy; ALL RIGHTS RESERVED.
-        </p>
+        <p className={styles.p}>{new Date().getFullYear()} DCODELAB &copy; ALL RIGHTS RESERVED.</p>
       </header>
 
       <section className={styles.section}>
@@ -78,8 +74,8 @@ export default function FlexVideoBox() {
                 <div className={styles.txt}>
                   <h2>{index + 1}</h2>
                   <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Molestias iste rerum similique ipsa deserunt asperiores.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iste rerum similique ipsa
+                    deserunt asperiores.
                   </p>
                 </div>
 

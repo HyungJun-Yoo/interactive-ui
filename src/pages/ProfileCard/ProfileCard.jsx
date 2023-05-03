@@ -1,32 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import styles from "./ProfileCard.module.css";
+import styles from './ProfileCard.module.css';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faStickyNote } from "@fortawesome/free-regular-svg-icons";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faStickyNote } from '@fortawesome/free-regular-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
-import member1 from "/src/assets/members/member1.jpg";
-import member2 from "/src/assets/members/member2.jpg";
-import member3 from "/src/assets/members/member3.jpg";
-import member4 from "/src/assets/members/member4.jpg";
+import member1 from '/src/assets/members/member1.jpg';
+import member2 from '/src/assets/members/member2.jpg';
+import member3 from '/src/assets/members/member3.jpg';
+import member4 from '/src/assets/members/member4.jpg';
 
 export default function ProfileCard() {
   const [state, setState] = useState({
-    id: "member1",
+    id: 'member1',
     src: member1,
   });
 
   useEffect(() => {
-    if (state.id === "member1")
-      document.querySelector("body").className = styles.member1;
-    if (state.id === "member2")
-      document.querySelector("body").className = styles.member2;
-    if (state.id === "member3")
-      document.querySelector("body").className = styles.member3;
-    if (state.id === "member4")
-      document.querySelector("body").className = styles.member4;
+    if (state.id === 'member1') document.querySelector('body').className = styles.member1;
+    if (state.id === 'member2') document.querySelector('body').className = styles.member2;
+    if (state.id === 'member3') document.querySelector('body').className = styles.member3;
+    if (state.id === 'member4') document.querySelector('body').className = styles.member4;
   }, [state]);
 
   const othersChange = (props) => {
@@ -67,24 +63,24 @@ export default function ProfileCard() {
 
       <nav className={styles.others}>
         <span
-          className={state.id === "member1" ? styles.on : ""}
+          className={state.id === 'member1' ? styles.on : ''}
           button="role"
-          onClick={() => othersChange({ id: "member1", src: member1 })}
+          onClick={() => othersChange({ id: 'member1', src: member1 })}
         ></span>
         <span
-          className={state.id === "member2" ? styles.on : ""}
+          className={state.id === 'member2' ? styles.on : ''}
           button="role"
-          onClick={() => othersChange({ id: "member2", src: member2 })}
+          onClick={() => othersChange({ id: 'member2', src: member2 })}
         ></span>
         <span
-          className={state.id === "member3" ? styles.on : ""}
+          className={state.id === 'member3' ? styles.on : ''}
           button="role"
-          onClick={() => othersChange({ id: "member3", src: member3 })}
+          onClick={() => othersChange({ id: 'member3', src: member3 })}
         ></span>
         <span
-          className={state.id === "member4" ? styles.on : ""}
+          className={state.id === 'member4' ? styles.on : ''}
           button="role"
-          onClick={() => othersChange({ id: "member4", src: member4 })}
+          onClick={() => othersChange({ id: 'member4', src: member4 })}
         ></span>
       </nav>
     </section>

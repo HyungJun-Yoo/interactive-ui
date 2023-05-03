@@ -1,23 +1,23 @@
-import React, { useEffect } from "react";
-import styles from "./PanoramaUI.module.scss";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import styles from './PanoramaUI.module.scss';
+import { Link } from 'react-router-dom';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import bg from "/src/assets/panoramas/bg.mp4";
-import pattern from "/src/assets/panoramas/pattern.jpg";
-import member1 from "/src/assets/panoramas/member1.jpg";
-import member2 from "/src/assets/panoramas/member2.jpg";
-import member3 from "/src/assets/panoramas/member3.jpg";
-import intro from "/src/assets/panoramas/intro.mp4";
-import tit from "/src/assets/panoramas/tit.png";
-import robot from "/src/assets/panoramas/robot.png";
-import txt from "/src/assets/panoramas/txt.png";
-import btn from "/src/assets/panoramas/btn.png";
-import reflect from "/src/assets/panoramas/reflect.png";
-import loop from "/src/assets/panoramas/loop.mp4";
-import txt2 from "/src/assets/panoramas/txt2.png";
-import line from "/src/assets/panoramas/line.png";
+import bg from '/src/assets/panoramas/bg.mp4';
+import pattern from '/src/assets/panoramas/pattern.jpg';
+import member1 from '/src/assets/panoramas/member1.jpg';
+import member2 from '/src/assets/panoramas/member2.jpg';
+import member3 from '/src/assets/panoramas/member3.jpg';
+import intro from '/src/assets/panoramas/intro.mp4';
+import tit from '/src/assets/panoramas/tit.png';
+import robot from '/src/assets/panoramas/robot.png';
+import txt from '/src/assets/panoramas/txt.png';
+import btn from '/src/assets/panoramas/btn.png';
+import reflect from '/src/assets/panoramas/reflect.png';
+import loop from '/src/assets/panoramas/loop.mp4';
+import txt2 from '/src/assets/panoramas/txt2.png';
+import line from '/src/assets/panoramas/line.png';
 
 import {
   faAndroid,
@@ -26,21 +26,13 @@ import {
   faGooglePlay,
   faTwitterSquare,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
 
-import {
-  faBolt,
-  faCloud,
-  faCode,
-  faEnvelope,
-  faList,
-  faRss,
-  faSun,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBolt, faCloud, faCode, faEnvelope, faList, faRss, faSun } from '@fortawesome/free-solid-svg-icons';
 
 export default function PanoramaUI() {
   useEffect(() => {
-    document.querySelector("body").className = styles.body;
+    document.querySelector('body').className = styles.body;
   }, []);
 
   return (
@@ -65,19 +57,13 @@ export default function PanoramaUI() {
             </div>
             <div>
               <p>
-                <FontAwesomeIcon
-                  icon={faTwitterSquare}
-                  className={styles.icon}
-                />
+                <FontAwesomeIcon icon={faTwitterSquare} className={styles.icon} />
               </p>
               <h2>Twitter</h2>
             </div>
             <div>
               <p>
-                <FontAwesomeIcon
-                  icon={faFacebookSquare}
-                  className={styles.icon}
-                />
+                <FontAwesomeIcon icon={faFacebookSquare} className={styles.icon} />
               </p>
               <h2>Facebook</h2>
             </div>
@@ -104,10 +90,9 @@ export default function PanoramaUI() {
               <img src={pattern} alt="뉴스소개 이미지" />
               <h3>Lorem ipsum dolor sit.</h3>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed
-                debitis modi reiciendis ab aliquid doloremque ipsa, molestias
-                culpa dolorem ad cumque pariatur saepe, amet, assumenda quo
-                error tenetur voluptatum placeat.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed debitis modi reiciendis ab aliquid
+                doloremque ipsa, molestias culpa dolorem ad cumque pariatur saepe, amet, assumenda quo error tenetur
+                voluptatum placeat.
               </p>
             </div>
           </div>
@@ -122,10 +107,7 @@ export default function PanoramaUI() {
               </div>
               <div className={styles.con}>
                 <h2>Member1 Information</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt, quia.
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quia.</p>
                 <span>2022-01-03</span>
               </div>
             </div>
@@ -136,10 +118,7 @@ export default function PanoramaUI() {
               </div>
               <div className={styles.con}>
                 <h2>Member2 Information</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt, quia.
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quia.</p>
                 <span>2020-11-08</span>
               </div>
             </div>
@@ -150,10 +129,7 @@ export default function PanoramaUI() {
               </div>
               <div className={styles.con}>
                 <h2>Member3 Information</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt, quia.
-                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quia.</p>
                 <span>2018-04-17</span>
               </div>
             </div>
@@ -170,9 +146,8 @@ export default function PanoramaUI() {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 <br />
                 <br />
-                Voluptatibus voluptatum, rem delectus earum ex accusantium
-                facere quis optio quae deleniti nam nihil nulla veritatis
-                mollitia consectetur maxime vel ut? Animi.
+                Voluptatibus voluptatum, rem delectus earum ex accusantium facere quis optio quae deleniti nam nihil
+                nulla veritatis mollitia consectetur maxime vel ut? Animi.
               </p>
             </div>
             <div>
@@ -221,10 +196,7 @@ export default function PanoramaUI() {
               </div>
               <div className={styles.con}>
                 <h2>Culpa, tempora.</h2>
-                <p>
-                  Modi repudiandae possimus exercitationem, id tempora
-                  voluptatem sed?
-                </p>
+                <p>Modi repudiandae possimus exercitationem, id tempora voluptatem sed?</p>
               </div>
             </div>
 
@@ -234,10 +206,7 @@ export default function PanoramaUI() {
               </div>
               <div className={styles.con}>
                 <h2>Optio, porro.</h2>
-                <p>
-                  Sunt voluptatibus ut adipisci animi eaque consequatur
-                  expedita.
-                </p>
+                <p>Sunt voluptatibus ut adipisci animi eaque consequatur expedita.</p>
               </div>
             </div>
 
