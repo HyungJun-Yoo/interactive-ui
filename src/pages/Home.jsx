@@ -25,6 +25,10 @@ export default function Home() {
       <Link to={'/FlexVideoBox'}>
         <p>FlexVideoBox</p>
       </Link>
+
+      <Link to={'/SwiperGallery'}>
+        <p>SwiperGallery</p>
+      </Link>
     </div>
   );
 }

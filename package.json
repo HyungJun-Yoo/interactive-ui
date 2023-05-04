@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "swiper": "^8.4.7"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
