@@ -7,6 +7,7 @@
 
 ## 주요 화면
 
+### 챕터 1
 - 프로필 카드
 <img src="https://user-images.githubusercontent.com/70789958/209966585-d98fa6af-bd0e-4876-be12-85f3569682a5.gif" width="400">
 
@@ -15,6 +16,19 @@
 
 - 마을 애니메이션
 <img src="https://user-images.githubusercontent.com/70789958/209966752-92f77672-b2b6-4123-a715-0d82cbf8d484.gif" width="400">
+
+### 챕터2
+- 파라노마 UI
+<img src="https://user-images.githubusercontent.com/70789958/236220187-48872aeb-6fb8-441d-a3b4-d34af5bf056a.gif" width="400">
+
+- flex 영상박스
+<img src="https://user-images.githubusercontent.com/70789958/236217628-aaa781d7-1c31-49a9-b4fb-8075bb4bd250.gif" width="400">
+
+- 스와이퍼 갤러리
+<img src="https://user-images.githubusercontent.com/70789958/236217883-b34df0fa-831e-4e76-8325-62af91ff74fb.gif" width="400">
+
+
+
 
 
 ## Skills
