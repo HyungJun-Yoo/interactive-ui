@@ -12,6 +12,7 @@ li {
 }
 
 a {
-  outline: 0;
+  color: #000;
   text-decoration: none;
+  outline: none;
 }

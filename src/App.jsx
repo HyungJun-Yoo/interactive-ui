@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 
 import Home from './pages/Home';
-import ProfileCard from './pages/ProfileCard/ProfileCard';
-import FullScreenVideo from './pages/FullScreenVideo/FullScreenVideo';
-import TownAnimation from './pages/TownAnimation/TownAnimation';
-import PanoramaUI from './pages/PanoramaUI/PanoramaUI';
-import FlexVideoBox from './pages/FlexVideoBox/FlexVideoBox';
-import SwiperGallery from './pages/SwiperGallery/SwiperGallery';
+import ProfileCard from './pages/chapter1/ProfileCard/ProfileCard';
+import FullScreenVideo from './pages/chapter1/FullScreenVideo/FullScreenVideo';
+import TownAnimation from './pages/chapter1/TownAnimation/TownAnimation';
+import PanoramaUI from './pages/chapter2/PanoramaUI/PanoramaUI';
+import FlexVideoBox from './pages/chapter2/FlexVideoBox/FlexVideoBox';
+import SwiperGallery from './pages/chapter2/SwiperGallery/SwiperGallery';
 
 function App() {
   const location = useLocation();
