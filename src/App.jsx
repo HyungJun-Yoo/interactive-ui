@@ -8,6 +8,7 @@ import TownAnimation from './pages/chapter1/TownAnimation/TownAnimation';
 import PanoramaUI from './pages/chapter2/PanoramaUI/PanoramaUI';
 import FlexVideoBox from './pages/chapter2/FlexVideoBox/FlexVideoBox';
 import SwiperGallery from './pages/chapter2/SwiperGallery/SwiperGallery';
+import ResponsiveGallery from './pages/chapter3/ResponsiveGallery/ResponsiveGallery';
 
 function App() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function App() {
         <Route path={'/PanoramaUI'} element={<PanoramaUI />} />
         <Route path={'/FlexVideoBox'} element={<FlexVideoBox />} />
         <Route path={'/SwiperGallery'} element={<SwiperGallery />} />
+        <Route path={'/ResponsiveGallery'} element={<ResponsiveGallery />} />
       </Routes>
     </>
   );

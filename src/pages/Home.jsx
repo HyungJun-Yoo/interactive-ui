@@ -9,6 +9,7 @@ import townAnimation from '/src/assets/homes/townAnimation.webp';
 import panoramaUI from '/src/assets/homes/panoramaUI.webp';
 import flexVideoBox from '/src/assets/homes/flexVideoBox.webp';
 import swiperGallery from '/src/assets/homes/swiperGallery.webp';
+import responsiveGallery from '/src/assets/homes/responsiveGallery.webp';
 
 export default function Home() {
   const chapter1 = [
@@ -47,7 +48,13 @@ export default function Home() {
     },
   ];
 
-  const chapter3 = [{}];
+  const chapter3 = [
+    {
+      title: 'ResponsiveGallery',
+      src: responsiveGallery,
+      env: ['PC', 'Mobile'],
+    },
+  ];
 
   return (
     <main>
@@ -82,6 +89,22 @@ export default function Home() {
         <h2 className={styles.h2}>Chapter2</h2>
         <div className={styles.inner}>
           {chapter2.map((content) => {
+            return (
+              <article className={styles.article} key={content.title}>
+                <Link to={`/${content.title}`}>
+                  <img src={content.src} alt={content.title} />
+                  <p>{content.title}</p>
+                </Link>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className={`${styles.section} ${styles.chapter3}`}>
+        <h2 className={styles.h2}>Chapter3</h2>
+        <div className={styles.inner}>
+          {chapter3.map((content) => {
             return (
               <article className={styles.article} key={content.title}>
                 <Link to={`/${content.title}`}>

@@ -1,0 +1,101 @@
+.header {
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, aqua, royalblue);
+
+  h1 {
+    font: bold 50px/1 'orbitron';
+    color: #fff;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-200%);
+
+    &::before {
+      content: 'UI/UX DEVELOPMENT';
+      font: 14px/1 'orbitron';
+      color: #fff;
+      letter-spacing: 2px;
+      position: absolute;
+      left: 0;
+      top: 140px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 130px;
+      height: 2px;
+      background-color: #fff;
+      margin-top: 20px;
+    }
+  }
+
+  ul {
+    position: absolute;
+    left: 60px;
+    bottom: 100px;
+
+    li {
+      float: left;
+      margin-right: 10px;
+
+      a {
+        font-size: 20px;
+        color: #fff;
+
+        span {
+          display: inline-block;
+          margin-left: 4px;
+          transform: scale(0.7);
+          transform-origin: left center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $web) {
+  .header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+
+    h1 {
+      font: bold 24px/1 'orbitron';
+      transform: translateY(-50%);
+      left: 50px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    ul {
+      left: auto;
+      right: 50px;
+      bottom: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: $tabletS) {
+  .header {
+    h1 {
+      font-size: 20px;
+    }
+
+    ul li {
+      margin-left: 3px;
+
+      a span {
+        display: none;
+      }
+    }
+  }
+}
