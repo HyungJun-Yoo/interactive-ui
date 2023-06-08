@@ -10,6 +10,7 @@ import panoramaUI from '/src/assets/homes/panoramaUI.webp';
 import flexVideoBox from '/src/assets/homes/flexVideoBox.webp';
 import swiperGallery from '/src/assets/homes/swiperGallery.webp';
 import responsiveGallery from '/src/assets/homes/responsiveGallery.webp';
+import timeResponsive from '/src/assets/homes/timeResponsive.webp';
 
 export default function Home() {
   const chapter1 = [
@@ -53,6 +54,11 @@ export default function Home() {
       title: 'ResponsiveGallery',
       src: responsiveGallery,
       env: ['PC', 'Mobile'],
+    },
+    {
+      title: 'TimeResponsive',
+      src: timeResponsive,
+      env: ['PC'],
     },
   ];
 
