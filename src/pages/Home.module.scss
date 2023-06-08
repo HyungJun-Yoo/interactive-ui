@@ -29,27 +29,31 @@
     justify-content: center;
     align-items: center;
 
-    a {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 400px;
-      margin-top: 24px;
-      margin-left: 10px;
-      border-radius: 20px;
-      border: 1px solid #eee;
+    .article {
+      margin: 10px;
 
-      img {
-        width: 100%;
-        height: 200.86px;
-        border-radius: 20px 20px 0 0;
-        object-fit: cover;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        margin-top: 24px;
+        margin-left: 10px;
+        border-radius: 20px;
+        border: 1px solid #eee;
+
+        img {
+          width: 100%;
+          height: 200.86px;
+          border-radius: 20px 20px 0 0;
+          object-fit: cover;
+        }
       }
-    }
 
-    p {
-      font-size: 24px;
+      p {
+        font-size: 24px;
+      }
     }
   }
 
@@ -60,7 +64,8 @@
 }
 
 .chapter1,
-.chapter2 {
+.chapter2,
+.chapter3 {
   border-top: 1px solid orange;
   padding: 20px;
 }
