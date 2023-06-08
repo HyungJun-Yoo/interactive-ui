@@ -192,7 +192,7 @@ export default function ResponsiveGallery() {
   return (
     <>
       <header className={styles.header}>
-        <h1>DECODE LAB</h1>
+        <h1>DCODE LAB</h1>
 
         <ul className={styles.ul}>
           {icons.map((icon) => {
