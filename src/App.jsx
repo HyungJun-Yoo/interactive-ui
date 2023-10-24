@@ -10,6 +10,7 @@ import FlexVideoBox from './pages/chapter2/FlexVideoBox/FlexVideoBox';
 import SwiperGallery from './pages/chapter2/SwiperGallery/SwiperGallery';
 import ResponsiveGallery from './pages/chapter3/ResponsiveGallery/ResponsiveGallery';
 import TimeResponsive from './pages/chapter3/TimeResponsive/TimeResponsive';
+import SequenceMotion from './pages/chapter3/SequenceMotion/SequenceMotion';
 
 function App() {
   const location = useLocation();
@@ -37,6 +38,7 @@ function App() {
         <Route path={'/SwiperGallery'} element={<SwiperGallery />} />
         <Route path={'/ResponsiveGallery'} element={<ResponsiveGallery />} />
         <Route path={'/TimeResponsive'} element={<TimeResponsive />} />
+        <Route path={'/SequenceMotion'} element={<SequenceMotion />} />
       </Routes>
     </>
   );

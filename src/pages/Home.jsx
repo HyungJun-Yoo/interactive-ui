@@ -11,6 +11,7 @@ import flexVideoBox from '/src/assets/homes/flexVideoBox.webp';
 import swiperGallery from '/src/assets/homes/swiperGallery.webp';
 import responsiveGallery from '/src/assets/homes/responsiveGallery.webp';
 import timeResponsive from '/src/assets/homes/timeResponsive.webp';
+import sequenceMotions from '/src/assets/homes/sequenceMotions.webp';
 
 export default function Home() {
   const chapter1 = [
@@ -58,6 +59,11 @@ export default function Home() {
     {
       title: 'TimeResponsive',
       src: timeResponsive,
+      env: ['PC'],
+    },
+    {
+      title: 'SequenceMotion',
+      src: sequenceMotions,
       env: ['PC'],
     },
   ];
