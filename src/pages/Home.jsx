@@ -12,6 +12,7 @@ import swiperGallery from '/src/assets/homes/swiperGallery.webp';
 import responsiveGallery from '/src/assets/homes/responsiveGallery.webp';
 import timeResponsive from '/src/assets/homes/timeResponsive.webp';
 import sequenceMotions from '/src/assets/homes/sequenceMotions.webp';
+import musicPlayer from '/src/assets/homes/musicPlayer.webp';
 
 export default function Home() {
   const chapter1 = [
@@ -64,6 +65,11 @@ export default function Home() {
     {
       title: 'SequenceMotion',
       src: sequenceMotions,
+      env: ['PC'],
+    },
+    {
+      title: 'MusicPlayer',
+      src: musicPlayer,
       env: ['PC'],
     },
   ];
