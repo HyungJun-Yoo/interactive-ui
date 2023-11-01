@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import styles from './SequenceMotion.module.scss';
 
-import logo from '/src/assets/sequence-motions/logo.png';
+import logo from '/sequence-motions/logo.png';
 
 export default function SequenceMotion() {
   const [total, setTotal] = useState(0);
@@ -43,7 +43,7 @@ export default function SequenceMotion() {
       <main className={total === length ? `${styles.on}` : ''}>
         {Array.from({ length }, (_, i) => (
           <img
-            src={`/src/assets/sequence-motions/pic${i}.jpg`}
+            src={`/sequence-motions/pic${i}.jpg`}
             alt="image"
             key={i}
             style={{ display: i === activeImage ? 'block' : 'none' }}
